@@ -1,0 +1,28 @@
+#summary Beadás 6
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 6 =
+
+== Fakocka határidő: szombat (március 26.) ==
+
+=== Prototípus koncepciója ===
+
+[https://docs.google.com/document/d/1xDwo5x9ZRtjN6qqWv44fOb4oXHCGsVJUJwXA1MFDi4g/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *35*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 7.0 || Specifikáció változás || Gubics ||
+|| 7.1 || Prototípus interface-definíciója || Gubics, Küzdi ||
+|| 7.1.1 || Az interfész általános leírása || Gubics, Küzdi ||
+|| 7.1.2 || Bemeneti nyelv || Gubics, Küzdi ||
+|| 7.1.3 || Kimeneti nyelv || Gubics, Küzdi ||
+|| 7.2 || Összes részletes use-case || Morva ||
+|| 7.3 || Tesztelési terv || László ||
+|| 7.4 || Tesztelést támogató segéd- és fordítóprogramok specifikálása || Gubics, László ||
+|| 7.5 || Napló || Gubics, Küzdi, László, Morva ||
+
+_Beadási határidő: március 28._

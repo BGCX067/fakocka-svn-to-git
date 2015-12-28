@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+<component><!-- jelgenerator -->
+ <id>0</id>
+ <type>signalgenerator</type>
+ <value>10</value>
+</component>
+
+<component><!-- inverter -->
+ <id>1</id>
+ <type>inverter</type>
+</component>
+
+<component><!-- oszcilloszkop -->
+ <id>2</id>
+ <type>scope</type>
+</component>
+
+<component><!-- vezetek a jelgenerator kimenete es az inverter bemenete kozott -->
+ <id>3</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>0</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>1</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek az inverter kimenete es az oszcilloszkop bemenete kozott -->
+ <id>4</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>1</id>
+   <pin>1</pin>
+  </in>
+  <out>
+   <id>2</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+</circuit>

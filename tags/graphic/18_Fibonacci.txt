@@ -1,0 +1,13 @@
+signalgenerator 0 50 50
+switch 1 190 50
+composite FIBO 2 100 40
+display 3 100 110
+display 4 110 110
+display 5 120 110
+display 6 130 110
+wire 7 60 55 100 55
+wire 8 140 55 190 55
+wire 9 105 70 105 110
+wire 10 115 70 115 110
+wire 11 125 70 125 110
+wire 12 135 70 135 110

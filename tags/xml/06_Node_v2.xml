@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+ 
+<component><!-- kapcsolo -->
+ <id>0</id>
+ <type>switch</type>
+ <value>0</value>
+</component>
+ 
+<component><!-- csomopont -->
+ <id>1</id>
+ <type>node</type>
+ <pincount>3</pincount>
+</component>
+ 
+<component><!-- kijelzo -->
+ <id>2</id>
+ <type>display</type>
+</component>
+
+<component><!-- kijelzo -->
+ <id>3</id>
+ <type>display</type>
+</component>
+ 
+<component><!-- vezetek a jelgenerator0 es a csomopont kozott-->
+<id>4</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>0</id>
+  <pin>0</pin>
+ </in>
+ <out>
+  <id>1</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component>
+ 
+<component><!-- vezetek a csomopont es display kozott -->
+<id>5</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>1</id>
+  <pin>1</pin>
+ </in>
+ <out>
+  <id>2</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component>
+ 
+<component><!-- vezetek a csomopont es display kozott -->
+<id>6</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>1</id>
+  <pin>2</pin>
+ </in>
+ <out>
+  <id>3</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component> 
+
+</circuit>

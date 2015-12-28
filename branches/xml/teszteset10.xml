@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+<component><!-- inverter-->
+<id>0</id>
+<type>inverter</type>
+</component>
+
+<component><!-- node-->
+<id>1</id>
+<type>node</type>
+<pincount>3</pincount>
+</component>
+
+<component><!-- display-->
+<id>2</id>
+<type>display</type>
+</component>
+
+<component><!-- vezetek az inverter kimenete es a node bemenete kozott -->
+<id>3</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>0</id>
+  <pin>1</pin>
+ </in>
+ <out>
+  <id>1</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component>
+
+<component><!-- vezetek az inverter bemenete es a node kimenete kozott -->
+<id>4</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>1</id>
+  <pin>1</pin>
+ </in>
+ <out>
+  <id>0</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component>
+
+<component><!-- vezetek a node kimenete es a display kozott -->
+<id>5</id>
+<type>wire</type>
+<connections>
+ <in>
+  <id>1</id>
+  <pin>2</pin>
+ </in>
+ <out>
+  <id>2</id>
+  <pin>0</pin>
+ </out>
+</connections>
+</component>
+
+</circuit>

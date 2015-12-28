@@ -1,0 +1,22 @@
+#summary Beadás 10
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 10 =
+
+== Fakocka határidő: szombat (május 7.) ==
+
+=== 13.	Grafikus változat beadása ===
+
+[https://docs.google.com/document/d/1eETnf5eNbmXnvEdb2KJMyxaLUZ-44WeHTh3irVuL-Tg/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *40*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 13.1 || Fordítási és futtatási útmutató ||  ||
+|| 13.2 || Értékelés ||  ||
+|| 13.3 || Napló || Gubics, Küzdi, László, Morva ||
+
+_Beadási határidő: május 9._

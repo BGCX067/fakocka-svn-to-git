@@ -1,0 +1,3 @@
+DigitalCircuit has been loaded from teszteset9.xml
+A(z) 4 es a(z) 5 ID-ju vezetekek is a(z) 2 ID-ju komponens 0 indexu labara csatlakoznak!
+

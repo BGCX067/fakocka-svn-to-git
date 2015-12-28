@@ -1,0 +1,7 @@
+switch 0 50 105
+switch 1 50 115
+composite RS_L 2 100 100
+display 3 180 110
+wire 4 60 110 100 110
+wire 5 60 120 100 120
+wire 6 140 115 180 115

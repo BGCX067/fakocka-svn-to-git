@@ -1,0 +1,9 @@
+switch 0 50 105
+switch 1 50 115
+composite RSFF 2 100 100
+display 3 180 105
+display 4 180 115
+wire 5 60 110 100 110
+wire 6 60 120 100 120
+wire 7 140 110 180 110
+wire 8 140 120 180 120

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+ <composite><!-- NAND kapu -->
+  <cid>0</cid>
+  <parts><!-- kompozit elem alkotoelemei az ID 0-rol indul, mivel ez az elemen belul van -->
+
+   <component><!-- s0 -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+   </component>
+
+   <component><!-- s1-->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+   </component>
+
+   <component><!-- es kapu -->
+	<id>2</id>
+	<type>andgate</type>
+	<pincount>3</pincount>
+   </component>
+   
+   <component><!-- inverter -->
+	<id>3</id>
+	<type>inverter</type>
+   </component> 
+
+   <component><!-- display -->
+	<id>4</id>
+	<type>display</type>
+   </component>
+
+   <component><!-- vezetek s0 es az ANDGate 1-es laba kozott -->
+	<id>5</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>0</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>2</id>
+  	<pin>1</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek s1 es az ANDGate 2-es laba kozott -->
+	<id>6</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>1</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>2</id>
+  	<pin>2</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek az ANDGate kimenete es az inverter bemenete kott -->
+	<id>7</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>2</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>3</id>
+  	<pin>0</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek az inverter kimenete es a kijelzo bemenete kozott -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>3</id>
+  	<pin>1</pin>
+ 	</in>
+ 	<out>
+  	<id>4</id>
+  	<pin>0</pin>
+ 	</out>
+	</connections>
+   </component>
+
+  </parts>
+ </composite><!-- kompozit elem (NAND kapu) vege -->
+
+<composite><!-- RS flipflop -->
+ <cid>1</cid>
+ <parts><!-- kompozit elem alkotoelemei -->
+ 
+  <component><!-- s0 -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+  </component>
+
+  <component><!-- s1-->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+  </component>
+
+  <component><!-- kompozit elem (NAND kapu)2 -->
+   <id>2</id>
+   <type>composite</type>
+   <reference>0</reference>
+   <inpins>2</inpins>
+   <outpins>1</outpins>
+  </component>
+
+  <component><!-- kompozit elem (NAND kapu)3 -->
+   <id>3</id>
+   <type>composite</type>
+   <reference>0</reference>
+   <inpins>2</inpins>
+   <outpins>1</outpins>
+  </component>
+  
+  <component><!-- node4 -->
+	<id>4</id>
+	<type>node</type>
+	<pincount>3</pincount>
+  </component>
+
+  <component><!-- node5 -->
+	<id>5</id>
+	<type>node</type>
+	<pincount>3</pincount>
+  </component>
+
+  <component><!-- display6 -->
+	<id>6</id>
+	<type>display</type>
+  </component>
+
+  <component><!-- display7 -->
+	<id>7</id>
+	<type>display</type>
+  </component>
+
+  <component><!-- vezetek s0 es NANDGate2 kozott -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>0</id>
+ 	<pin>0</pin>
+	</in>
+	<out>
+ 	<id>2</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek NANDGate2 es node6 kozott -->
+	<id>9</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>1</id>
+ 	<pin>0</pin>
+	</in>
+	<out>
+ 	<id>3</id>
+ 	<pin>1</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek s1 es NANDGate3 kozott -->
+	<id>10</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>2</id>
+ 	<pin>2</pin>
+	</in>
+	<out>
+ 	<id>4</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek NANDGate3 es node7 kozott -->
+	<id>11</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>3</id>
+ 	<pin>2</pin>
+	</in>
+	<out>
+ 	<id>5</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek NANDGate2 es node7 kozott -->
+	<id>12</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>4</id>
+ 	<pin>1</pin>
+	</in>
+	<out>
+ 	<id>3</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek NANDGate3 es node6 kozott -->
+	<id>13</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>5</id>
+ 	<pin>1</pin>
+	</in>
+	<out>
+ 	<id>2</id>
+ 	<pin>1</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek node6 es display4 kozott -->
+	<id>14</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>4</id>
+ 	<pin>2</pin>
+	</in>
+	<out>
+ 	<id>6</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+  <component><!-- vezetek node7 es display5 kozott -->
+	<id>15</id>
+	<type>wire</type>
+	<connections>
+	<in>
+ 	<id>5</id>
+ 	<pin>2</pin>
+	</in>
+	<out>
+ 	<id>7</id>
+ 	<pin>0</pin>
+	</out>
+	</connections>
+  </component>
+
+ </parts>
+</composite><!-- RS flipflop vege -->
+
+<component><!-- sg1 -->
+ <id>0</id>
+ <type>signalgenerator</type>
+ <value>11010</value>
+</component>
+
+<component><!-- sg2-->
+ <id>1</id>
+ <type>signalgenerator</type>
+ <value>01110</value>
+</component>
+
+<component><!-- kompozit elem (RS flipflop) -->
+ <id>2</id>
+ <type>composite</type>
+ <reference>1</reference>
+  <inpins>2</inpins>
+  <outpins>2</outpins>
+</component>
+
+<component><!-- scope3 -->
+ <id>3</id>
+ <type>scope</type>
+</component>
+
+<component><!-- scope4 -->
+ <id>4</id>
+ <type>scope</type>
+</component>
+
+<component><!-- vezetek sg1 es az RS ff kozott -->
+ <id>5</id>
+ <type>wire</type>
+ <connections>
+  <in>
+	<id>0</id>
+	<pin>0</pin>
+  </in>
+  <out>
+	<id>2</id>
+	<pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek sg2 es az RS ff kozott -->
+ <id>6</id>
+ <type>wire</type>
+ <connections>
+  <in>
+	<id>1</id>
+	<pin>0</pin>
+  </in>
+  <out>
+	<id>2</id>
+	<pin>1</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek az RS ff kimenete es a scope3 bemenete kozott -->
+ <id>7</id>
+ <type>wire</type>
+ <connections>
+  <in>
+	<id>2</id>
+	<pin>2</pin>
+  </in>
+  <out>
+	<id>3</id>
+	<pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek az RS ff kimenete es a scope3 bemenete kozott -->
+ <id>8</id>
+ <type>wire</type>
+ <connections>
+  <in>
+	<id>2</id>
+	<pin>3</pin>
+  </in>
+  <out>
+	<id>4</id>
+	<pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+</circuit>

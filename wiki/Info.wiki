@@ -1,0 +1,59 @@
+#summary Infók
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+=BME - VIK - 2010/2011/2 - szoftlab4 developer team=
+
+----
+
+==*Csapat adatok:*==
+
+*csapatnév:*
+	* fakocka
+
+*azonosító:* 
+	* 27
+  
+*csapattagok:*
+	* László Balázs
+	* Küzdi Tamás András
+	* Morva Farkas Zsolt
+	* Gubics Zoltán
+
+*konzulens:*
+	* Schnell Henrik 
+	
+*konzultációs időpont:* 
+	* szerda 8-10 (R.4.C)
+
+----
+
+==*Feladatkiírás:*==
+
+Digitális rendszer modellezése
+
+Egy digitális rendszer (áramkör) alapvető építőelemekből áll. Az építőelemek be- és/vagy kimenetekkel rendelkeznek. A kimenetek értéke a bemenetek értéke alapján alakul ki. Egy kimenetre tetszőleges számú bemenet csatlakoztatható, amely hatására az adott bemenetek felveszik a kimenet által adott logikai (igaz vagy hamis) szintet. Több kimenet összekapcsolása nem megengedett. Üresen hagyott (semmihez sem kapcsolódó) bemenet nem megengedett.
+
+Az alapvető építőelemek:
+
+    * INVERTER - az inverter egy bemenettel és egy kimenettel rendelkezik, a kimenet értéke a bemenet logikai negáltja.
+    * ÉS kapu - az és kapu két vagy több bemenettel és egy kimenettel rendelkezik. A kimenet értéke a bemenetek logikai és kapcsolata.
+    * VAGY - a vagy kapu két vagy több bemenettel és egy kimenettel rendelkezik. A kimenet értéke a bemenetek logikai vagy kapcsolata.
+    * Kapcsoló - a kapcsoló jelforrás, egy kimenete van. "Be" állásban a kimenete igaz, "ki" állásban pedig hamis.
+    * Jelgenerátor - a jelgenerátor jelforrás, egy kimenettel. A kimenet előre definiált jelsorozatot ismétel ciklikusan.
+    * Kijelző - a kijelző a jel értékét megjelenítő elem, egy bemenete van. Bemenetének igaz estén világít, hamis esetében pedig nem világít. 
+
+Későbbiekben új építőelemek megjelenése is várható.
+
+Az építőelemekből tetszőleges logikai hálózat felépíthető, amely a jelforrások, mint bemeneti értékek hatására működést produkál, amely a kijelzőkön keresztül megfigyelhető. 
+
+
+----
+
+==*Változás:*==
+
+
+
+----
+
+Címkék: _Java, BME, VIK, szoftlab4_

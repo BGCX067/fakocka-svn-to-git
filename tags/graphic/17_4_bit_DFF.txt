@@ -1,0 +1,19 @@
+switch 0 50 95
+switch 1 100 60
+switch 2 110 60
+switch 3 120 60
+switch 4 130 60
+composite 4DFF 5 100 85
+display 6 100 140 
+display 7 110 140
+display 8 120 140
+display 9 130 140
+wire 10 60 100 100 100
+wire 11 105 70 105 85
+wire 12 115 70 115 85
+wire 13 125 70 125 85
+wire 14 135 70 135 85
+wire 15 105 115 105 140
+wire 16 115 115 115 140
+wire 17 125 115 125 140
+wire 18 135 115 135 140

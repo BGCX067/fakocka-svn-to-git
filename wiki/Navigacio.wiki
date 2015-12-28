@@ -1,0 +1,49 @@
+#summary Navigáció
+#labels Restrict-View-Commit
+
+==Aktuális==
+
+[Beadas11 Beadás 11]
+
+==Navigáció==
+
+*Beadások*
+
+  * [Beadas1 Beadás 1]
+  * [Beadas2 Beadás 2]
+  * [Beadas3 Beadás 3]
+  * [Beadas4 Beadás 4]
+  * [Beadas5 Beadás 5]
+  * [Beadas6 Beadás 6]
+  * [Beadas7 Beadás 7]
+  * [Beadas8 Beadás 8]
+  * [Beadas9 Beadás 9]
+  * [Beadas10 Beadás 10]
+  * [Beadas11 Beadás 11]
+
+*Egyebek (beadáshoz)*
+
+  * [Hataridok Határidők]
+  * [Naplo Napló]
+  * [Otletek Ötletek]
+  * [https://docs.google.com/leaf?id=0Al6N0YS4wnygdDVBTlp4OHV6WVlLZnJCbVlrdTNNUlE&sort=name&layout=list&pid=0BzAubkMqtphqODdmMmExNGQtZDczMy00YTdmLWJiMWItNzdjNmEwZWM3MmFi&cindex=1 Munkaóra összesítés]
+  * [https://docs.google.com/document/d/1Kt32A0poVfvozz0EIzsAJTLMo9r6VnyWNs6ZUo9ZOJ4/edit?hl=hu Konzultációk]
+  * [https://docs.google.com/document/d/1piKlo75mmlZ4J970TsvKF3QjerYU6my7A9oiDBh_4Us/edit?hl=hu Updates]
+  * [https://docs.google.com/leaf?id=0BzAubkMqtphqODdmMmExNGQtZDczMy00YTdmLWJiMWItNzdjNmEwZWM3MmFi&hl=hu Google Docs]
+  * [Adatszerkezet Adatszerkezet]
+  * [http://rabszolga.net16.net/xml/ Fakocka XML validator]
+  * [Fun Fun]
+
+*Alap információk*
+
+  * [Elodeink Elődeink]
+  * [Fejlesztoeszkozok Fejlesztőeszközök]
+  * [Feladatkorok Feladatkörök]
+  * [Info Project információ]
+
+*Hivatalos oldalak*
+
+  * [http://anonym.to/?http://home.sch.bme.hu/~henko/szglab4/ Henko oldala]
+  * [https://www.iit.bme.hu/~szoftlab4/ Tárgyhonlap]
+  * [http://www.iit.bme.hu/hercules Hercules Feladatbeadó]
+  * [https://wiki.sch.bme.hu/bin/view/Infoalap/SzgLab4 SCH Wiki]

@@ -1,0 +1,12 @@
+#summary Napló
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Napló =
+
+Itt jegyezzük fel a fontosabb történéseket.
+
+|| *Kezdet* || *Idő (óra)* || *Résztvevők*  || *Leírás* ||
+|| 2011-01-21 10:25 || 2 || Gubics || Kiválasztja a fejlesztőeszközöket, létrehozza a fejlesztési környezetet, a Google Code-os projekt oldalt és a levelezőlistát. Leírást készít a fejlesztőeszköz beállításához. ||
+|| 2011-01-23 17:00 || 2 || Gubics, Küzdi, László, Morva || *MSN értekezlet:* előzetes feladatkörök kiosztva, fejlesztőeszközök beállítva minden csapattagnál. Csapatvezető választás. ||
+|| 2011-02-13 10:00 || 1 || Gubics, Küzdi, László, Morva || *MSN értekezlet:* az 1. beadáshoz a feladatok kiosztva ||

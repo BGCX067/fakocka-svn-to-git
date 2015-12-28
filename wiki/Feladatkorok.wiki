@@ -1,0 +1,18 @@
+#summary Feladatkörök
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Feladatkörök =
+
+Ezek csak előzetes leírások, azért, hogy legyen valami.
+Úgy is mindenkinek kell mindent csinálnia valamilyen szinten...
+
+|| *Név* || *Feladatok* ||
+|| Gubics Zoltán || műszaki vezető, kódolás, grafika ||
+|| Küzdi Tamás András || kódolás, implementáció, grafika ||
+|| László Balázs || vezető, dokumentáció, tesztelés ||
+|| Morva Farkas Zsolt  || dokumentáció, diagramkészítés, nyomtatás ||
+
+_dreamcoders.pdf_-ből
+
+  "A csapattagok közötti munkamegosztás dinamikusan változhat a csapattagok projektre fordítható idejétől függően, de alapvetően az egyenletes munkamegosztásra és a feladatkörök minél jobb elhatárolódását tartjuk szem előtt."

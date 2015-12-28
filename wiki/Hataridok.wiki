@@ -1,0 +1,30 @@
+#summary Határidők, Ütemterv és konzultációk
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Határidők =
+
+|| *Konzultáció* || *Beadás* || *Max p.* || *Elért p.* || *Teljesítmény* || *Leírás* || *Egyéni oldal* ||
+|| febr. 9. || febr. 11. || || || || 12 h - csapatok regisztrációja ||  ||
+|| febr. 16. || febr. 21. || 10 || 5 || 50% || Követelmény, projekt, funkcionalitás - beadás || [Beadas1 Beadás 1] ||
+|| febr. 23.|| febr. 28. || 20 || 14 || 70% || Analízis modell kidolgozása 1. - beadás || [Beadas2 Beadás 2] ||
+|| márc. 2.|| márc. 7. || 30 || 27 || 90% || Analízis modell kidolgozása 2. - beadás || [Beadas3 Beadás 3] ||
+|| márc. 9. || márc. 14. || 20 || 20 || 100% || Szkeleton tervezése - beadás || [Beadas4 Beadás 4] ||
+|| márc. 16.|| márc. 21. || 20 || 20 || 100% || Szkeleton - beadás || [Beadas5 Beadás 5] ||
+|| márc. 23.|| márc. 28. || 35 || 25 || 71% || Szkeleton bemutató (konzultáción) és Prototípus koncepciója - beadás || [Beadas6 Beadás 6] ||
+|| márc. 30.|| ápr.  4. || 30 || 30 || 100% || Részletes tervek - beadás || [Beadas7 Beadás 7] ||
+|| ápr. 6.|| ápr. 11. || ||  || || Prototípus készítése, tesztelése (Ezen a héten nem kell anyagot beadni.) || ||
+|| ápr. 13.|| ápr. 18. || 35 || 31 || 89% || Prototípus - beadás || [Beadas8 Beadás 8] ||
+|| ápr. 20.|| ápr. 26. || 30 || 25 || 83% || Protó bemutató (konzultáción) és Grafikus felület specifikációja - beadás || [Beadas9 Beadás 9] ||
+|| ápr. 27.|| máj. 2. || ||  || || Grafikus változat készítése (Ezen a héten nem kell anyagot beadni.) || ||
+|| máj. 4.|| máj. 9. || 40 || 40 || 100% || Grafikus változat - beadás || [Beadas10 Beadás 10] ||
+|| máj. 11.|| máj. 13. || 30 || 20 || 67% || Grafikus bemutató (konzultáción) és Összefoglalás - beadás || [Beadas11 Beadás 11] ||
+
+Az egyes munkaszakaszokban a feltöltés legkorábbi időpontjai:
+
+ * szkeleton - március 14. 18:00.
+ * protó - április 12. 18:00.
+ * grafikus - május 2. 18:00. 
+
+A feltöltés végső határideje mindegyik szakaszra - május 20. 14.00 óra.
+Ezt követően semmilyen anyagot nem lehet feltölteni.

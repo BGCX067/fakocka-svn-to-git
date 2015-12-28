@@ -1,0 +1,17 @@
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td width="150">
+<b><font face="times" color="#0039b6" size="10">G</font><font face="times" color="#c41200" size="10">o</font><font face="times" color="#f3c518" size="10">o</font><font face="times" color="#0039b6" size="10">g</font><font face="times" color="#30a72f" size="10">l</font><font face="times" color="#c41200" size="10">e</font></b>
+</td><td><img src="http://fakocka.googlecode.com/svn/trunk/fakocka/docs/wiki-images/pixel.jpg" alt="" width="100%" height="20" /></td>
+</tr>
+</table>
+<blockquote>
+<h1><font face="arial">Server Error</font></h1>
+<font face="arial">The server encountered an error and could not complete your request.</font>
+<p>
+<font face="arial">
+If the problem persists, please <a href="http://www.google.com/support/">report</a> your problem and mention this error message and the query that caused it.
+</font>
+</p>
+</blockquote>
+<img src="http://fakocka.googlecode.com/svn/trunk/fakocka/docs/wiki-images/pixel.jpg" alt="" width="100%" height="4" />

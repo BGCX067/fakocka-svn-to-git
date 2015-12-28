@@ -1,0 +1,21 @@
+#summary Beadás 3
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 3 =
+
+== Fakocka határidő: szombat (március 5.) ==
+
+=== Analízis modell kidolgozása 2. ===
+
+[https://docs.google.com/document/d/1ho3c6KOQG4LUWzTiDQClbchkSQoOWlI2dG2yrM5e-24/edit?hl=hu Dokumentum a Google Docs-on]
+
+[https://docs.google.com/document/d/1TUPzTxpt9VR_10lYEeJWwolDEPtQr47qTperPzuNs1M/edit?hl=hu Henkó-féle bónusz feladatok]
+
+Pontszám: *30*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+
+_Beadási határidő: március 7._

@@ -1,0 +1,27 @@
+switch 0 50 50
+switch 1 90 20
+switch 2 100 20
+switch 3 110 20
+switch 4 120 20
+switch 5 90 90
+switch 6 100 90
+switch 7 110 90
+switch 8 120 90
+display 9 170 35
+display 10 170 45
+display 11 170 55
+display 12 170 65
+composite 4MUX 13 90 40
+wire 14 60 55 90 55
+wire 15 95 40 95 30
+wire 16 105 40 105 30
+wire 17 115 40 115 30
+wire 18 125 40 125 30
+wire 19 95 70 95 90
+wire 20 105 70 105 90
+wire 21 115 70 115 90
+wire 22 125 70 125 90
+wire 23 130 42 170 40
+wire 24 130 50 170 50
+wire 25 130 60 170 60
+wire 26 130 68 170 70

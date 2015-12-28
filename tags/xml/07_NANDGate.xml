@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+ <composite><!-- NAND kapu -->
+  <cid>0</cid>
+  <parts><!-- kompozit elem alkotoelemei az ID 0-rol indul, mivel ez az elemen belul van -->
+
+   <component><!-- s0 -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+   </component>
+
+   <component><!-- s1-->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+   </component>
+
+   <component><!-- es kapu -->
+	<id>2</id>
+	<type>andgate</type>
+	<pincount>3</pincount>
+   </component>
+   
+   <component><!-- inverter -->
+	<id>3</id>
+	<type>inverter</type>
+   </component> 
+
+   <component><!-- display -->
+	<id>4</id>
+	<type>display</type>
+   </component>
+
+   <component><!-- vezetek s0 es az ANDGate 1-es laba kozott -->
+	<id>5</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>0</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>2</id>
+  	<pin>1</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek s1 es az ANDGate 2-es laba kozott -->
+	<id>6</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>1</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>2</id>
+  	<pin>2</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek az ANDGate kimenete es az inverter bemenete kott -->
+	<id>7</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>2</id>
+  	<pin>0</pin>
+ 	</in>
+ 	<out>
+  	<id>3</id>
+  	<pin>0</pin>
+ 	</out>
+	</connections>
+   </component>
+
+   <component><!-- vezetek az inverter kimenete es a kijelzo bemenete kozott -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+ 	<in>
+  	<id>3</id>
+  	<pin>1</pin>
+ 	</in>
+ 	<out>
+  	<id>4</id>
+  	<pin>0</pin>
+ 	</out>
+	</connections>
+   </component>
+
+  </parts>
+ </composite><!-- kompozit elem (NAND kapu) vege -->
+
+ <component><!-- sg1 -->
+  <id>0</id>
+  <type>signalgenerator</type>
+  <value>1010</value>
+ </component>
+
+ <component><!-- sg2-->
+  <id>1</id>
+  <type>signalgenerator</type>
+  <value>0011</value>
+ </component>
+ 
+ <component><!-- kompozit elem (NAND kapu) -->
+  <id>2</id>
+  <type>composite</type>
+  <reference>0</reference>
+  <inpins>2</inpins>
+  <outpins>1</outpins>
+ </component>
+
+ <component><!-- scope -->
+  <id>3</id>
+  <type>scope</type>
+ </component>
+
+ <component><!-- vezetek sg1 es a NANDGate 1-es laba kozott -->
+  <id>4</id>
+  <type>wire</type>
+  <connections>
+   <in>
+	<id>0</id>
+	<pin>0</pin>
+   </in>
+   <out>
+	<id>2</id>
+	<pin>0</pin>
+   </out>
+  </connections>
+ </component>
+
+ <component><!-- vezetek sg2 es a NANDGate 2-es laba kozott -->
+  <id>5</id>
+  <type>wire</type>
+  <connections>
+   <in>
+	<id>1</id>
+	<pin>0</pin>
+   </in>
+   <out>
+	<id>2</id>
+	<pin>1</pin>
+   </out>
+  </connections>
+ </component>
+
+ <component><!-- vezetek a NANDGate kimenete es a scope bemenete kozott -->
+  <id>6</id>
+  <type>wire</type>
+  <connections>
+   <in>
+	<id>2</id>
+	<pin>2</pin>
+   </in>
+   <out>
+	<id>3</id>
+	<pin>0</pin>
+   </out>
+  </connections>
+ </component>
+
+</circuit>

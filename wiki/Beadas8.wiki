@@ -1,0 +1,38 @@
+#summary Beadás 8
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 8 =
+
+== Fakocka határidő: szombat (április 16.) ==
+
+=== Prototípus beadása ===
+
+[https://docs.google.com/document/d/1RgZd02leP3cz3rDGic6ni_2B8dUigxcq_U-fUogV7s4/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *35*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 10.1 || Fordítási és futtatási útmutató ||  ||
+|| 10.1.1 || Fájllista ||  ||
+|| 10.1.2 || Fordítás ||  ||
+|| 10.1.3 || Futtatás ||  ||
+|| 10.2 || Tesztek jegyzőkönyvei ||  ||
+|| 10.3 || Értékelés ||  ||
+|| 10.4 || Napló || Gubics, Küzdi, László, Morva ||
+
+XML betöltő: László
+
+Parancsértelmező: Gubics
+
+Doksi, Henkó féle basz: Morva
+
+Manuális teszt és XML ellenőrzés: Küzdi
+
+Bemenet és kimenet txt-be: Küzdi
+
+Batch file, Diff utils: -
+
+_Beadási határidő: április 18._

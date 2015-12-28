@@ -1,0 +1,31 @@
+#summary Beadás 1
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 1 =
+
+== Fakocka határidő: szombat (február 19.) ==
+
+=== Követelmény, projekt, funkcionalitás ===
+
+[https://docs.google.com/document/d/1cerEUZczlLDKq68Rpy02eZXqL2XEN9PEUMRBPhg3vYg/edit?hl=hu Dokumentum a Google Docs-on]
+
+[http://fakocka.googlecode.com/svn/trunk/fakocka/docs/documentation/rated/beadas1.zip Kijavítandó hibák]
+
+Pontszám: *10*
+
+_Sem a leírásban, sem a szótárban nem szerepelhetnek számítástechnikai és informatikai szavak, kifejezések._
+
+_Ne feledkezzenek el a fedőlapról és (az első) naplóról._
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 2.1 || Követelmény definíció || László ||
+|| 2.2 || Projekt terv || Morva ||
+|| 2.3 || Feladatleírás || Gubics, Küzdi ||
+|| 2.4 || Szótár || Gubics, Küzdi ||
+|| 2.5 || Essential use-case-ek || Gubics, Küzdi ||
+|| 2.5.1 || Use-case diagram || Gubics, Küzdi ||
+|| 2.5.2 || Use-case leírások || Gubics, Küzdi ||
+|| 2.6 || Napló || László ||
+
+_Beadási határidő: február 21._

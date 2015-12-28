@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+<component><!-- jelgenerator -->
+ <id>0</id>
+ <type>switch</type>
+ <value>1</value>
+</component>
+
+<component><!-- kijelzo -->
+ <id>1</id>
+ <type>display</type>
+</component>
+
+<component><!-- vezetek a jelgenerator kimenete es a kijelzo bemenete kozott -->
+ <id>2</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>0</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>1</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+</circuit>

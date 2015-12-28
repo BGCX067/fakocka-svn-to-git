@@ -1,0 +1,11 @@
+DigitalCircuit has been loaded from teszteset4.xml
+Scope3 has been set to measure state
+Simulation stepped by 1
+Scope3 has measured false 
+Simulation stepped by 1
+Scope3 has measured false false 
+Simulation stepped by 1
+Scope3 has measured false false false 
+Simulation stepped by 1
+Scope3 has measured false false false true true 
+Scope3 has measured false false false true true 

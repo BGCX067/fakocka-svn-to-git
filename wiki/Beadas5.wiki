@@ -1,0 +1,32 @@
+#summary Beadás 5
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 5 =
+
+== Fakocka határidő: szombat (március 19.) ==
+
+=== Szkeleton beadás ===
+
+[https://docs.google.com/document/d/1XS2nBNjaU71ZpAlh6p4xPFzy07Q80KtC4aa8mDQlCog/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *20*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 6.1 || Fordítási és futtatási útmutató ||  ||
+|| 6.1.1 || Fájllista ||  ||
+|| 6.1.2 || Fordítás ||  ||
+|| 6.1.3 || Futtatás ||  ||
+|| 6.2 || Értékelés ||  ||
+|| 6.3 || Napló || Gubics, Küzdi, László, Morva ||
+
+Tesztesetek kódolása
+|| *Sorszám* || *Elvégzi* ||
+|| 1 || László ||
+|| 3 || Morva ||
+|| 2 || Gubics ||
+|| 4-5-6 || Küzdi ||
+
+_Beadási határidő: március 21._

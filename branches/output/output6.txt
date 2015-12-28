@@ -1,0 +1,8 @@
+DigitalCircuit has been loaded from teszteset6.xml
+Simulation stepped by 1
+Display2 has true state
+Display3 has true state
+Simulation stepped by 1
+Display2 has false state
+Display3 has false state
+Display3 has false state

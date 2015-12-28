@@ -1,0 +1,9 @@
+switch 0 115 30
+switch 1  50 60
+switch 2 115 90
+composite 1MUX 3 100 50
+display 4 150 60
+wire 5 120 50 120 40
+wire 6 60 65 100 65
+wire 7 120 80 120 90
+wire 8 140 65 150 65

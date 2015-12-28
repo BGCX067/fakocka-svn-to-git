@@ -1,0 +1,24 @@
+#summary Beadás 9
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 9 =
+
+== Fakocka határidő: szombat (április 25.) ==
+
+=== 11.	Grafikus felület specifikációja ===
+
+[https://docs.google.com/document/d/17Vvpbb7iw562xqxw0c4-2iqeXNbiqu7IQbxOh0iKw54/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *30*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 11.1 || A grafikus interfész ||  ||
+|| 11.2 || A grafikus rendszer architektúrája ||  ||
+|| 11.3 || A grafikus objektumok felsorolása ||  ||
+|| 11.4 || Kapcsolat az alkalmazói rendszerrel ||  ||
+|| 11.5 || Napló || Gubics, Küzdi, László, Morva ||
+
+_Beadási határidő: április 26._

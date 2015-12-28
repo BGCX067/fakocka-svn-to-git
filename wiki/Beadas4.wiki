@@ -1,0 +1,26 @@
+#summary Beadás 4
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 4 =
+
+== Fakocka határidő: szombat (március 12.) ==
+
+=== Szkeleton tervezése ===
+
+[https://docs.google.com/document/d/1M-NdVMnqo8Sr-ouIb-SKgg-HuLy08bpcbXuRdAuvlu8/edit?hl=hu Dokumentum a Google Docs-on]
+
+[https://docs.google.com/document/pub?id=1_bYR-UrBw7X8SsnlzhOklKIpWhSR4Jx6BhYtkbgQJ8Y Henkó javaslatai]
+
+Pontszám: *20*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 5.1 || A szkeleton modell valóságos use-case-ei || Morva ||
+|| 5.2 || Architektúra || László (+ Leírás: Farki) ||
+|| 5.3 || A szkeleton kezelői felületének terve, dialógusok || Gubics ||
+|| 5.4 || Szekvencia diagramok a belső működésre || Küzdi, Gubics ||
+|| 5.5 || Napló || Gubics, Küzdi, László, Morva ||
+
+_Beadási határidő: március 14._

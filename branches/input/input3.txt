@@ -1,0 +1,6 @@
+loadCircuit teszteset3.xml
+startScope 2
+stepSimulation 1
+getScope 2
+stepSimulation 1
+getScope 2

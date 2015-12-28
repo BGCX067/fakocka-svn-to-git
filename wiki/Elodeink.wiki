@@ -1,0 +1,140 @@
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= The Power of Open Source =
+
+==<font color="#bb0000">Szigorúan ötletnek!</font>==
+
+*Egyéb*
+
+[http://code.google.com/p/logiccircuitworkbench/ Logic Circuit Workbench] - ez nagyon hasonlít arra, amit nekünk most véghet kell vinnünk
+
+*Újabbak*
+
+  # [http://anonym.to/?http://code.google.com/p/cakeisalie/ Cake is a lie]
+  # [http://anonym.to/?http://code.google.com/p/random-coding-team/ Random Coding Team]
+  # [http://anonym.to/?http://code.google.com/p/szoftverlabor-42/ Szoftverlabor 42]
+  # [http://anonym.to/?http://code.google.com/p/b4c-digitalisrendszer/ Brute Force]
+  # [http://anonym.to/?http://code.google.com/p/ateam2011/ A-Team2011]
+  # [http://anonym.to/?http://code.google.com/p/bme2011team79/ bme2011team79]
+  # [http://anonym.to/?http://code.google.com/p/passz/ Passz csapat]
+  # [http://anonym.to/?http://code.google.com/p/x-team/ X-Team]
+  # [http://anonym.to/?http://code.google.com/p/soliton/ Soliton] [http://anonym.to/?http://soliton.uw.hu/s/ (Soliton (uw-s oldal))]
+  # [http://anonym.to/?http://code.google.com/p/deutschgmbh/ Deutschgmbh]
+  # [http://anonym.to/?http://code.google.com/p/siks-szlab4/ SIKS]
+  # [http://anonym.to/?http://code.google.com/p/copyright-szlab/ Copyright-szlab]
+  # [http://anonym.to/?http://www.assembla.com/spaces/softball/team Softball] (assembla.com) *(Innentől minimális aktivitás)*
+  # [http://anonym.to/?http://code.google.com/p/ikszteam/ IkszTeam]
+  # [http://anonym.to/?http://code.google.com/p/szoftlab-4/ Tottori Team]
+  # [http://anonym.to/?http://code.google.com/p/hqcoders/ HQ Coders]
+  # [http://anonym.to/?http://code.google.com/p/parizer-szoftlab4/ Parízer]
+  # [http://anonym.to/?http://code.google.com/p/legyenfrappans-szoftlab4/ Legyen frappáns]
+  # [http://anonym.to/?http://code.google.com/p/whitespaceshf/ Whitespaceshf]
+  # [http://anonym.to/?http://code.google.com/p/digitalworks/ Digital Works]
+  # [http://anonym.to/?http://code.google.com/p/aaa-batteries/ AAA Batteries]
+  # [http://anonym.to/?http://code.google.com/p/lab4bme/ Lab4BME]
+  # [http://anonym.to/?http://code.google.com/p/a-team-szoftlab4/ A-Team]
+  # [http://anonym.to/?http://code.google.com/p/a-team-szoftver-labor-4/ A-Team] (már volt hasonló)
+  # [http://anonym.to/?http://code.google.com/p/digitalsystem/ Digitalsystem]
+  # [http://anonym.to/?http://code.google.com/p/szlab4-verde/ Verde]
+  # [http://anonym.to/?http://code.google.com/p/szoftverlabor42/ Szoftverlabor 42] (már volt hasonló)
+  # [http://anonym.to/?http://sourceforge.net/projects/kysoft/ Szglab4 by totti001] *(Innentől Sourceforge.net)*
+  # [http://anonym.to/?http://sourceforge.net/projects/softwaretechno/ Software Technology HW]
+  # [http://anonym.to/?http://sourceforge.net/projects/paprikasjuditka/ paprika]
+  # [http://anonym.to/?http://sourceforge.net/projects/nuclearwinter/ Nuclear Winter]
+  # [http://anonym.to/?http://sourceforge.net/projects/gamma-szlab4/ gamma]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftlab4aaa/ AAA Batteries]
+  # [http://anonym.to/?http://sourceforge.net/projects/szlab4kristaly/ Kristálycukor]
+  # [http://anonym.to/?http://sourceforge.net/projects/t4c/ tools4communism]
+  # [http://anonym.to/?http://sourceforge.net/projects/digmod-trollok/ Trollok]
+  # [http://anonym.to/?http://sourceforge.net/projects/digsysmod/ Digsysmod]
+
+
+*2010*
+  # [http://anonym.to/?http://code.google.com/p/dreamcoders/ Dreamcoders]
+  # [http://anonym.to/?http://code.google.com/p/bigimot/ Bigimot]
+  # [http://anonym.to/?http://code.google.com/p/highvoltage/ High voltage]
+  # [http://anonym.to/?http://code.google.com/p/paragon-team/ Paragon Team]
+  # [http://anonym.to/?http://code.google.com/p/viharszglab4/ Vihar csapat]
+  # [http://anonym.to/?http://code.google.com/p/amagyarmelo/ A magyar meló]
+  # [http://anonym.to/?http://code.google.com/p/rgbb/ RGBB]
+  # [http://anonym.to/?http://code.google.com/p/szoftlab4-ledzeppelin Ledzeppelin]
+  # [http://anonym.to/?http://code.google.com/p/szoftlab4-metalmacko/ Metálmackó]
+  # [http://anonym.to/?http://code.google.com/p/myproject-szglab4/ Myproject-szglab4]
+  # [http://anonym.to/?http://code.google.com/p/szglab42010112ll/ Szglab42010112ll]
+  # [http://anonym.to/?http://code.google.com/p/projectszglab42010112/ Projectszglab42010112]
+  # [http://anonym.to/?http://sourceforge.net/projects/petroleumlampa/ petroleUMLampa] *(Innentől Sourceforge.net)*
+  # [http://anonym.to/?http://sourceforge.net/projects/zsarupalota/ zsaRUPalota]
+  # [http://anonym.to/?http://sourceforge.net/projects/vosztok/ Vosztok]
+  # [http://anonym.to/?http://sourceforge.net/projects/bankrablo/ bankrablo]
+  # [http://anonym.to/?http://sourceforge.net/projects/gtproject/ Gran Torino team BME project]
+  # [http://anonym.to/?http://sourceforge.net/projects/gyongytyukok/ gyongytyukok bankrabloja]
+  # [http://anonym.to/?http://sourceforge.net/projects/zaporozsec/ Zaporozsec]
+  # [http://anonym.to/?http://sourceforge.net/projects/per4mance/ per4mance]
+  # [http://anonym.to/?http://sourceforge.net/projects/neweartharmy/ new_earth_army]
+  # [http://anonym.to/?http://sourceforge.net/projects/hollandia-szoft/ Hollandia]
+  # [http://anonym.to/?http://sourceforge.net/projects/synergy-pacmang/ synergy-pacmanGTA]
+  # [http://anonym.to/?http://sourceforge.net/projects/gumimacik/ gumimacik]
+  # [http://anonym.to/?http://sourceforge.net/projects/toruszlab4/ Torusz]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftlab4kysoft/ szoftlab4kysoft]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftlab4/ Szoftver Labor 4 by stipi3]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftverlabor4p/ Szoftver labor 4 projekt]
+  # [http://anonym.to/?http://sourceforge.net/projects/qwerty/ qwerty]
+  # [http://anonym.to/?http://sourceforge.net/projects/verkehrsmeldung/ Verkehrsmeldungen]
+  # [http://anonym.to/?http://sourceforge.net/projects/fallingdomino/ FallingDomino]
+  # [http://anonym.to/?http://sourceforge.net/projects/szlab4/ SzLab4 by up555]
+  # [http://anonym.to/?http://sourceforge.net/projects/cjgnszlab4/ cjgn]
+  # [http://anonym.to/?http://sourceforge.net/projects/szglab4eszak/ Észak]
+  # [http://anonym.to/?http://sourceforge.net/projects/yeppp/  YEPP]
+
+*2009*
+  # [http://anonym.to/?http://code.google.com/p/csuklock/ Csuklock]
+  # [http://anonym.to/?http://code.google.com/p/szglab4ipar/ Szglab4Ipar]
+  # [http://anonym.to/?http://code.google.com/p/juzkez-szoftlab4/ Júz Kéz]
+  # [http://anonym.to/?http://code.google.com/p/juzkez Juzkez]
+  # [http://anonym.to/?http://code.google.com/p/raptors-juzkez/ Raptors-juzkez] (sok egyéb BME-s fájl SVN-en)
+  # [http://anonym.to/?http://code.google.com/p/bmespartans/ BME Spartans]
+  # [http://anonym.to/?http://code.google.com/p/popeye-power/ Popeye-power]
+  # [http://anonym.to/?http://code.google.com/p/avdpteam/ AVDPTeam]
+  # [http://anonym.to/?http://code.google.com/p/publicvoidpaint/ Public void paint]
+  # [http://anonym.to/?http://sourceforge.net/projects/butchersoftbme/ ButcherSoft_BME] *(Innentől Sourceforge.net)*
+  # [http://anonym.to/?http://sourceforge.net/projects/juzkez/ Juzkez]
+  # [http://anonym.to/?http://sourceforge.net/projects/numlock/ Numlock]
+  # [http://anonym.to/?http://sourceforge.net/projects/zeus-juz-kez/ zeus - Jz Kz]
+  # [http://anonym.to/?http://sourceforge.net/projects/tag-team/ T.A.G.-Team]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftlab4mc/ szoftlab4mc]
+  # [http://anonym.to/?http://sourceforge.net/projects/szoftverlab4/ szoftver labor 4]
+  # [http://anonym.to/?http://sourceforge.net/projects/poli-szlab4/ polihisztorok]
+  # [http://anonym.to/?http://sourceforge.net/projects/illproject/ Illuminati Project]
+
+*2008*
+  # [http://anonym.to/?http://sourceforge.net/projects/kigyofarmby6thf/ kigyofarm by 6th failure]
+  # [http://anonym.to/?http://sourceforge.net/projects/kigyofarm/ KigyoFarm]
+  # [http://anonym.to/?http://sourceforge.net/projects/kigyobuvolok/ Kigyobuvolok]
+
+*2007*
+  # [http://anonym.to/?http://code.google.com/p/szoftlab4/ Szoftlab4]
+  # [http://anonym.to/?http://sourceforge.net/projects/club610/ Club610]
+  # [http://anonym.to/?http://sourceforge.net/projects/szglab4except/ Lemmings]
+  # [http://anonym.to/?http://sourceforge.net/projects/codemasters/ Codemasters]
+  # [http://anonym.to/?http://sourceforge.net/projects/lemmings-bute/ Lemmings-BUTE]
+
+*2006*
+  # [http://anonym.to/?http://sourceforge.net/projects/szamorodni/ BME Kindergarten by Tropical Szamorodni]
+  # [http://anonym.to/?http://sourceforge.net/projects/bmo-cs/ BMO - Az óvoda]
+  # [http://anonym.to/?http://sourceforge.net/projects/ovoda/ Turboproggerek]
+  # [http://anonym.to/?http://sourceforge.net/projects/szglab/ szglab4 by baggiome]
+  # [http://anonym.to/?http://sourceforge.net/projects/koffeinkollegak/ Koffein Kindergarten]
+  # [http://anonym.to/?http://sourceforge.net/projects/kindergarten42/ Fourty-two aka 42]
+  # [http://anonym.to/?http://sourceforge.net/projects/nursery-szglab/ nursery]
+  # [http://anonym.to/?http://sourceforge.net/projects/szglab4-2k6/ 2k6]
+  # [http://anonym.to/?http://sourceforge.net/projects/kindergarten-kr/ Kreative team]
+  # [http://anonym.to/?http://sourceforge.net/projects/kutyaol/ Tricky Mouse]
+
+*2005*
+  # [http://anonym.to/?http://sourceforge.net/projects/hwhw/ ConvMayor]
+
+*2002*
+  # [http://anonym.to/?http://sourceforge.net/projects/szglab4/ irrational MElissa]
+
+Keress rá ezekre: _bme, vik, szoftlab, szoftlabházi, szoftlab4, szoftver labor, szoftverlabor, szoftver labor 4, szoftver laboratórium, szlab, szlab4, szglab, szglab4 (, BUTE, Technical University of Budapest, Budapest, University, Java)_

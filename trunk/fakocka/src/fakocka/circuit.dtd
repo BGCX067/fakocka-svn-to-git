@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE circuit [
+<!ATTLIST circuit ver NMTOKEN #REQUIRED>
+<!ELEMENT circuit (composite*,component+)>
+<!ELEMENT composite (cid,parts)><!-- kompozit elem -->
+<!ELEMENT cid (#PCDATA)>
+<!ELEMENT parts (component+)>
+<!ELEMENT component (id,type,(pincount|value|connections|reference)?)><!-- komponens -->
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT pin (#PCDATA)>
+<!ELEMENT pincount (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT reference (#PCDATA)>
+<!ELEMENT connections (in,out)>
+<!ELEMENT in (id,pin)>
+<!ELEMENT out (id,pin)>
+]>

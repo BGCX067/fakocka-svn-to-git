@@ -1,0 +1,27 @@
+#summary Beadás 2
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 2 =
+
+== Fakocka határidő: szombat (február 26.) ==
+
+=== Analízis modell kidolgozása 1. ===
+
+[https://docs.google.com/document/d/16wXUIl082MwK7GACq0EXnVmXvlabbA33mU2HcF_NX6w/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *20*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 3.1 || Objektum katalógus || Gubics, Küzdi ||
+|| 3.2 || Osztályok leírása || Gubics, Küzdi ||
+|| 3.3 || Statikus struktúra diagramok || Gubics ||
+|| 3.4 || Szekvencia diagramok || László, Morva ||
+|| 3.5 || State-chartok || László, Morva ||
+|| 3.6 || Napló || Gubics, Küzdi, László, Morva ||
+
+A következő pontokat szóban egyeztetjük szerdán (febr. 23.): 3.4 és 3.5.
+
+_Beadási határidő: február 28._

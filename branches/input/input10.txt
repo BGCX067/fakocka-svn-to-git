@@ -1,0 +1,2 @@
+loadCircuit teszteset10.xml
+stepSimulation 1

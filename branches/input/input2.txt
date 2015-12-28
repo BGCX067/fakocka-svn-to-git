@@ -1,0 +1,5 @@
+loadCircuit teszteset2.xml
+stepSimulation 1
+getDisplay 1
+stepSimulation 1
+getDisplay 1

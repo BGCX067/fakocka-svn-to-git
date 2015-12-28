@@ -1,0 +1,20 @@
+#summary Beadás 11
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 11 =
+
+== Fakocka határidő: csütörtök (május 12.) ==
+
+=== 13. Összefoglalás ===
+
+[https://docs.google.com/document/d/1QqJeYhAnCjUPQ8j96wsHnQnf7Eut75Iu7VHLe2UwE5I/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *30*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 13.5 || Napló || Gubics, Küzdi, László, Morva ||
+
+_Beadási határidő: május 13._

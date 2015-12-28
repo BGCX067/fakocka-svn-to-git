@@ -1,0 +1,61 @@
+#summary Ötletek
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Ötletek =
+
+[http://wow.iit.bme.hu/~szebi/slides/cpp5_bsc_sz.pdf Prog 2-ős digit áramkör]
+
+A fenti dia alapján készített uml class diagram:
+http://fakocka.googlecode.com/svn/trunk/fakocka/docs/uml/Class%20Diagram%20Sample.jpg
+
+Az algoritmusok is megvannak félig, de csak a fejemben, nem volt még időm leírni őket. (gubicsz)
+
+[http://www.java-samples.com/showtutorial.php?tutorialid=152 XML tutorial]
+
+= Komponens kapcsolatainak tárolása =
+
+Nagyjából átgondoltam ezt a dolgot és meg lehetne oldani felesleges kód és nehézkes kezelés nélkül is, mégpedig a következőképp:
+
+minden komponensre meg kellene határozni a lábkiosztást előre, pl: a kapuknál a kimenő láb lenne a 0. indexű, a bemenő lábak pedig fentről lefelé 1, 2, ... egészen addig ahány bemenő láb tartozik egy kapuhoz. Ezt így előre le kell fixálni minden komponensre, ez nem nagy cucc, mert igazából jelenleg 3 féle van, a kapuk, a jelforrások és a kijelző + később még esetleg bejöhet a flip-flip is ha ez lesz a feladatváltoztatás. Na most ha megvannak a lábindexek, akkor ezekkel lehetne indexelni a kapcsolatokat tartalmazó tömböt, ez azért jó, mert így egy plusz segédosztályt is megspórolnánk (ConnectionType - Ez tartja nyílván egy kapcsolatról, hogy IN vagy OUT típusú), mivel egy kapcsolat tömbbeli indexe alapján egyértelműen eldönthető, hogy az most kimenő vagy bemenő. itt egy egyszerű példa, ami egy 4 bemeneű, 1 kimenetű ANDGate kapcsolatait szemlélteti:
+
+{{{
+ANDGate ag = new ANDGate();
+.
+.
+.
+Connection c = ag.getConnection(0);  // a kimenő kapcsolatát adja vissza
+c = ag.getConnection(1);  // az 1.-es lábhoz tartozó bemenő kapcsolatát adja vissza
+c = ag.getConnection(2);  // az 2.-es lábhoz tartozó bemenő kapcsolatát adja vissza
+c = ag.getConnection(3);  // az 3.-es lábhoz tartozó bemenő kapcsolatát adja vissza
+c = ag.getConnection(4);  // az 4.-es lábhoz tartozó bemenő kapcsolatát adja vissza
+}}}
+
+Ezek alapján szerintem elég egyszerű és egyértelmű a használata. Az meg nem nagy munka, hogy megbeszéljük az egyes elemek lábkiosztását szerintem.
+
+= Jelterjedés =
+
+Egy működőképes digitális áramkörhöz mindenképp szükség van jelforrásra és digitális komponensekre. A jelforrások indítják el a jelterjedést minden esetben.Alapállapotban a komponensek lábain lévő üzenetek UNDEF-ek lennének. Mikor elindul a szimuláció a sendMessage() meghívja az adott komponens doFunction() metódusát, az leellenőrzi, hogy történt e változás az adott lábon, ha igen akkor elmenti a változást, majd továbbítja az üzenetet a kimenetre a működésnek megfelelően. Ha valamelyik bemeneti lábon UNDEF értéket észlel akkor az azt jelenti, hogy erre a lábra még nem érkezett megfelelő logikai érték SignalSource felől, ezért az iteráció megszakad. Ám mikor a másik lábra is érkezik logikai érték, akkor mindkét lábon logikai érték szerepel, vagyis a működésnek megfelelő érték továbbítható a kimenetre, majd onnan a következő komponens felé.
+
+Egy egyszerű példa: 2 bemenetű ÉS kapu, alapból minden lábán UNDEF szerepel. az 1es indexű bemenő lábához a SWITCH1-et, a 2-es indexű bemenő lábához a SWITCH2-t kötjük. Először meghívjuk a SWITCH1 init() metódusát, ami elindítja a jelterjedést, az meghívja az ÉS kapu doFunction() metódusát, ami a fentebb leírt módon hajtódik végre, de mivel a 2-es indexű lábon UNDEF értéket észlel, ezért nem tud előállítani értelmes továbbítandó üzenetet, vagyis a rekurzió megszakad. Ekkor továbblépünk a SWITCH2 init() metódusára, ami szintén meghívja az ÉS kapu doFunction() metódusát, ez szintén a működésének megfelelően fut le, azonban most már mindkét bemenő lábon logika érték szerepel, ebből már értelmes üzenetet tud generálni a kimenet felé.
+
+Szerintem ezért jobb alapállapotban az UNDEF, mert ezzel jelezzük, hogy a digitális áramkör létrehozásakor, még nincs értékük a kapuk lábainak, mivel az érték minden esetben a jelforrástól származik, ezek indítják be az üzenet továbbítást. Ellenben ha pl. logikai hamis értékkel inicializálnánk a kapuk lábain lévő értékeket alapállapotban az félig meddig csalásnak minősül, mert nem tudjuk leellenőrizni, hogy az most egy tényleges jelforrástól származó érték e, vagy csak az alap init érték és feleslegesen továbbítunk egy nem valós értéket a kijelző felé. Az UNDEF-fel viszont befejeződik a rekurzió, ha még nincs értelmes érték valamelyik bemenő lábon.
+
+Olvassátok el, gondoljátok át, aztán mondjatok véleményt.
+MINTAPÉLDA:
+[http://dl.dropbox.com/u/13603613/jelterjedes.ppt PPT]
+
+= Digitális áramkör ellenőrzése =
+
+Ezen kéne gondolkozni, hogy hogy lehet ellenőrizni minden egyes komponensre, hogy a kapcsolási szabályoknak megfelelően van e bekötve. Célszerűen egy boolean validate() metódust kéne minden komponensben megvalósítani, ami igazzal tér vissza ha helyes a bekötést, így csak le kéne futtatni az összes komponensre és ezzel leellenőrizhető az egész digitális áramkör helyessége.
+
+SR flipflop működése:
+http://pictures44.bloguez.com/pictures44/tags,photo,p,14.html?googleimage
+
+= Jelterjedés II =
+A konzultáció utáni megbeszélésen 2 hatalmas hibát vétettünk, amire viszont itthon rájöttem és sikerült működésre bírni végre a visszacsatolt komponenseket is. Íme:
+http://dl.dropbox.com/u/13603613/IMAG0068.jpg
+http://dl.dropbox.com/u/13603613/IMAG0069.jpg
+
+A hibákat majd inkább személyesen mondanám el.
+Most csak ennyire futotta, sry a külalakért.

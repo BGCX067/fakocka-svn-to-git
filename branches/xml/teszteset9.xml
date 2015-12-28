@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+<component><!-- kapcsolo0 -->
+ <id>0</id>
+ <type>switch</type>
+ <value>0</value>
+</component>
+
+<component><!-- kapcsolo1 -->
+ <id>1</id>
+ <type>switch</type>
+ <value>0</value>
+</component>
+
+<component><!-- inverter -->
+ <id>2</id>
+ <type>inverter</type>
+</component>
+
+<component><!-- kijelzo -->
+ <id>3</id>
+ <type>display</type>
+</component>
+
+<component><!-- vezetek a kapcsolo es az inverter kozott -->
+ <id>4</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>0</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>2</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek a kapcsolo es az inverter kozott -->
+ <id>5</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>1</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>2</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek az inverter es a kijelzo kozott -->
+ <id>6</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>2</id>
+   <pin>1</pin>
+  </in>
+  <out>
+   <id>3</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+</circuit>

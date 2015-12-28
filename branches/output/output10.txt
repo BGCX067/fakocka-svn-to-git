@@ -1,0 +1,3 @@
+DigitalCircuit has been loaded from teszteset10.xml
+Instabil allapot!
+

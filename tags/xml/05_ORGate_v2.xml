@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+
+<component><!-- switch0 -->
+ <id>0</id>
+ <type>switch</type>
+ <value>0</value>
+</component>
+
+<component><!-- switch1 -->
+ <id>1</id>
+ <type>switch</type>
+ <value>0</value>
+</component>
+
+<component><!-- vagy kapu -->
+ <id>2</id>
+ <type>orgate</type>
+ <pincount>3</pincount>
+</component>
+
+<component><!-- display -->
+ <id>3</id>
+ <type>display</type>
+</component>
+
+<component><!-- vezetek a jelgenerator0 kimenete es a vagy kapu bemenete kozott -->
+ <id>4</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>0</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>2</id>
+   <pin>1</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek a jelgenerator1 kimenete es a vagy kapu bemenete kozott -->
+ <id>5</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>1</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>2</id>
+   <pin>2</pin>
+  </out>
+ </connections>
+</component>
+
+<component><!-- vezetek a vagy kapu kimenete es az oszcilloszkop bemenete kozott -->
+ <id>6</id>
+ <type>wire</type>
+ <connections>
+  <in>
+   <id>2</id>
+   <pin>0</pin>
+  </in>
+  <out>
+   <id>3</id>
+   <pin>0</pin>
+  </out>
+ </connections>
+</component>
+
+</circuit>

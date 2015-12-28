@@ -1,0 +1,5 @@
+signalgenerator 0 50 110
+inverter 1 100 100
+scope 2 180 110
+wire 3 60 115 100 115
+wire 4 140 115 180 115

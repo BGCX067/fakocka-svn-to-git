@@ -1,0 +1,9 @@
+signalgenerator 0 50 105
+signalgenerator 1 50 115
+composite RSFF 2 100 100
+scope 3 180 105
+scope 4 180 115
+wire 5 60 110 100 110
+wire 6 60 120 100 120
+wire 7 140 110 180 110
+wire 8 140 120 180 120

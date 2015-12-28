@@ -1,0 +1,78 @@
+#summary Felhasznált fejlesztőeszlözök
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+=Fejlesztőeszközök=
+
+|| *Funkció*			|| *Név* 													||
+|| IDE					|| Eclipse IDE for Java Developers 							||
+|| UML					|| Visual Paradigm SDE for Eclipse Community Edition 		||
+|| Project Management	|| Google Code Project Hosting (SVN, Wiki, Issue Tracker)	||
+|| E-mail				|| Google Groups											||
+|| Documentation		|| MS World 2007 / Google Docs								||
+
+----
+
+=Eclipse plugins=
+
+|| *Plugin* 					|| *Funkció* 																								||
+|| Subclipse 					|| SVN támogatást integrál az Eclipse fejlesztőkörnyezetbe													||
+|| Mylyn 						|| Task ütemzést és Bug Tracker funkciókat integrál az Eclipse IDE-be 										||
+|| GoogleCode Mylyn Connector	|| A Google Code által biztosított Issue Tracker szolgáltatást köti össze a Mylyn plugin taskütemzőjével	||
+|| UMLet 						|| Könnyen használható (drag & drop) UML szerkesztőt integrál az Eclipse IDE-be  							||
+|| ModelGoon 					|| Java kódból képes Class, Squence, Interaction és Package diagramot szertkeszteni az Eclipse IDE-en belül ||
+
+----
+
+=Előnyök=
+
+  * A Visual Paradigm SDE lehetővé teszi, hogy UML diagramok alapján Java kódot generljunk.
+  * A plugineknek köszönhetően minden szoftverfejlesztéshez kapcsolódó feladatkör egy helyre, konkrétan az Eclipse integrált fejlesztőkörnyezetbe öszpontosul.
+  * A felsorolt fejlesztőeszközök lehetővé teszik a zavartalan csapatmunkát, mivel remekül szinkronizálhatóak a GoogleCode-os projekttel.
+
+----
+
+=Letöltés=
+Ez a pack nem tartalmazza a Visual Paradigm SDE-t, mert az egy nagyobb progi és külön installer kell hozzá, viszont ezen kívül minden plugin bele van integrálva.
+  _
+  * Link: [http://dl.dropbox.com/u/13603613/eclipse.zip eclipsepack]
+  * Telepítés: csak kicsomagolod és már mehet is az eclipse.
+  * Méret: ~130MB
+
+----
+
+=Használat=
+
+==SVN beállítása eclipse-ben:==
+
+  * Megnyitod az SVN Repository Exploring persperctivet (Window -> Open perspective -> SVN Repository Exploring)
+  * New Repository Location
+  * url: https://fakocka.googlecode.com/svn
+  * trunk/ mappában jobbclick a fakocka projecten és checkout (csak a fakocka projectet checkoutold, ne az egész repository gyökerét, mert úgy nem fog működni)
+  * Checkout as a project in the workspace, beírod a kívánt nevet, Check out HEAD revision bepipálva, finish
+  * Ha minden jól megy akkor már tölti is le a projectet a repositoryból, visszaváltasz Java perspective-re és ott lesz a projectek között.
+  * A projecten jobb click, majd a Team menu alatt éritek el az SVN használatához szükséges funciókat
+  
+  Egykét hasznos tipp SVN használtához:
+  # Commitolni (azaz visszatölteni SVN-be) csak működő kódot szabad.
+  # Mindig használj kommentet ha visszatöltesz valamit a tárolóba, mások dolgát könnyíted meg vele.
+  
+  
+==Task repository beállítása eclipseben:==
+
+  * Megnyitod a Planning Perspectivet, vagy csak simán a Task Listet.
+  * Task Listben jobbclick, New -> Query
+  * Add Task Repository -> Kiválasztod a Google Code-ost -> Next
+  * Project url: https://code.google.com/p/fakocka/, Label: amit akarsz, User ID: gmail accountod (pl gubicsz), Password: gmailes password, save passwordot célszerű kipipálni ->finish
+  * Ezután megjelent a repositoryk között az amelyiket épp létrehoztál, katt rá majd next
+  * Use predefined query -> All issues -> Finish
+  * Ezután a task list-ben megjelenik a query, ami szinkronban van a google code-on elérhető Issue Tracker szolgáltatással.
+  * Az új Taskoknál minden mezőt ki kell tölteni, majd ezután submiteled és már meg is jelenik google code-on.
+  
+==ModelGoon használata:==
+
+  * File -> New -> Other.. -> ModelGoon Diagrams -> létrehozod a kívánt diagramfajtát, majd a megjelenő ablakbó húzod (drag & drop) az ábrázolni kívánt source fileokat. (class diagramnál java, package diagramnál packageket)
+  
+==UMLet használata:==
+  
+  * File -> New -> Other.. -> Other -> UMLet diagram -> Innen meg már egyértelmű 

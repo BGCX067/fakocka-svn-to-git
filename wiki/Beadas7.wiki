@@ -1,0 +1,36 @@
+#summary Beadás 7
+#labels Restrict-View-Commit
+#sidebar Navigacio
+
+= Beadandó 7 =
+
+== Fakocka határidő: szombat (április 2.) ==
+
+=== Részletes tervek ===
+
+[https://docs.google.com/document/d/1gy5CTz1GPkJ4YUIuo4gkCrHPANNovqsVDMUyHXZAME8/edit?hl=hu Dokumentum a Google Docs-on]
+
+Pontszám: *30*
+
+_Ne feledkezzenek el a fedőlapról és naplóról!_
+
+|| *Sorszám* || *Feladat* || *Elvégzi* ||
+|| 8.0 || Előző beadás kiegészítése / javítása || (csillag) ||
+|| 8.1 || Osztályok és metódusok terve || Gubics ||
+|| 8.2 || A tesztek részletes tervei, leírásuk a teszt nyelvén || Küzdi, Morva ||
+|| 8.3 || A tesztelést támogató programok tervei || Morva ||
+|| 8.4 || Napló || Gubics, Küzdi, László, Morva ||
+
+Farki: kapcsolási képek (látszódjon a jelgenerátor állapota, pl.: 1010)
+
+fő osztályban ne tároljunk mindent
+
+===Előző beadás javítása===
+
+(csillag)
+
+ * specifikáció változást kibővíteni - Gubics
+ * leírónyelvet megcsinálni (XML és DTD) - László
+ * instabil állapotra teszteset (és egyéb hibás működést tesztelni)
+
+_Beadási határidő: április 4._

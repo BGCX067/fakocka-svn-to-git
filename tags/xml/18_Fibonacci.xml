@@ -1,0 +1,3333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuit.dtd">
+<circuit ver="1.0">
+<composite>
+		<!-- XOR kapu -->
+		<cid>0</cid>
+		<parts>
+			<component>
+				<!-- kapcsolo1 - bemenet A -->
+				<id>0</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo1 - bemenet B -->
+				<id>1</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- csomopont1 -->
+				<id>2</id>
+				<type>node</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- csomopont2 -->
+				<id>3</id>
+				<type>node</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- inverter1 -->
+				<id>4</id>
+				<type>inverter</type>
+			</component>
+			<component>
+				<!-- inverter2 -->
+				<id>5</id>
+				<type>inverter</type>
+			</component>
+			<component>
+				<!-- ES kapu1 -->
+				<id>6</id>
+				<type>andgate</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- ES kapu2 -->
+				<id>7</id>
+				<type>andgate</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- VAGY kapu -->
+				<id>8</id>
+				<type>orgate</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- kijelzo -->
+				<id>9</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- Vezetek kapcsolo1 es csomopon1 kozott -->
+				<id>10</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>0</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>2</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek kapcsolo2 es csomopon2 kozott  -->
+				<id>11</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>1</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>3</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csompont1 es eskapu1 kozott -->
+				<id>12</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>6</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csompont2 es eskapu2 kozott -->
+				<id>13</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>7</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csomopont1 es inverter1 kozott -->
+				<id>14</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>4</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek inverter1 es eskapu2 kozott -->
+				<id>15</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>4</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>7</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csomopont2 es inverter2 kozott -->
+				<id>16</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>5</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek inverter2 es eskapu1 kozott -->
+				<id>17</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>5</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>6</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek eskapu1 es vagykapu kozott -->
+				<id>18</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>6</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>8</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek eskapu2 es vagykapu kozott -->
+				<id>19</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>7</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>8</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek vagykapu es kijelzo kozott -->
+				<id>20</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>8</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>9</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+		</parts>
+	</composite>
+	<!-- ############################################################################################### -->
+	<composite>
+		<!-- fel osszeado -->
+		<cid>1</cid>
+		<parts>
+			<component>
+				<!-- kapcsolo1 - bemenet A -->
+				<id>0</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo2 - bemenet B -->
+				<id>1</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- csomopont1 -->
+				<id>2</id>
+				<type>node</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- csomopont2 -->
+				<id>3</id>
+				<type>node</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- XOR kapu -->
+				<id>4</id>
+				<type>composite</type>
+				<reference>0</reference>
+				<inpins>2</inpins>
+				<outpins>1</outpins>
+			</component>
+			<component>
+				<!-- es kapu -->
+				<id>5</id>
+				<type>andgate</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- kijelzo1 -->
+				<id>6</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- kijelzo2 -->
+				<id>7</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- Vezetek kapcsolo1 es csomopon1 kozott -->
+				<id>8</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>0</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>2</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek kapcsolo2 es csomopon2 kozott  -->
+				<id>9</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>1</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>3</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csompont1 es XOR kapu kozott -->
+				<id>10</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>4</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csompont1 es eskapu kozott -->
+				<id>11</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>5</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csomopont2 es XOR kapu kozott -->
+				<id>12</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>1</pin>
+					</in>
+					<out>
+						<id>4</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek csompont2 es es kapu kozott -->
+				<id>13</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>5</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek XOR kapu es kijelzo1 kozott -->
+				<id>14</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>4</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>6</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- Vezetek es kapu es kijelzo2 kozott -->
+				<id>15</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>5</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>7</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+		</parts>
+	</composite>
+	<!-- ############################################################################################### -->
+	<composite>
+		<!-- full adder -->
+		<cid>2</cid>
+		<parts>
+			<component>
+				<!-- kapcsolo -->
+				<id>0</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>1</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>2</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- half adder -->
+				<id>3</id>
+				<type>composite</type>
+				<reference>1</reference>
+				<inpins>2</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- half adder -->
+				<id>4</id>
+				<type>composite</type>
+				<reference>1</reference>
+				<inpins>2</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- vagy kapu -->
+				<id>5</id>
+				<type>orgate</type>
+				<pincount>3</pincount>
+			</component>
+			<component>
+				<!-- display -->
+				<id>6</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- display -->
+				<id>7</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>8</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>0</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>3</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>9</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>1</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>4</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>10</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>4</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>11</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>4</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>3</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>12</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>4</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>5</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>13</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>2</pin>
+					</in>
+					<out>
+						<id>6</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>14</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>5</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>15</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>5</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>7</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+		</parts>
+	</composite>
+	<!-- ############################################################################################### -->
+	<composite>
+		<!-- 4-bit adder -->
+		<cid>3</cid>
+		<parts>
+			<component>
+				<!-- kapcsolo -->
+				<id>0</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>1</id>
+				<type>switch</type>
+				<value>1</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>2</id>
+				<type>switch</type>
+				<value>1</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>3</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>4</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>5</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>6</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>7</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- kapcsolo -->
+				<id>8</id>
+				<type>switch</type>
+				<value>0</value>
+			</component>
+			<component>
+				<!-- full adder -->
+				<id>9</id>
+				<type>composite</type>
+				<reference>2</reference>
+				<inpins>3</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- full adder -->
+				<id>10</id>
+				<type>composite</type>
+				<reference>2</reference>
+				<inpins>3</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- full adder -->
+				<id>11</id>
+				<type>composite</type>
+				<reference>2</reference>
+				<inpins>3</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- full adder -->
+				<id>12</id>
+				<type>composite</type>
+				<reference>2</reference>
+				<inpins>3</inpins>
+				<outpins>2</outpins>
+			</component>
+			<component>
+				<!-- display -->
+				<id>13</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- display -->
+				<id>14</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- display -->
+				<id>15</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- display -->
+				<id>16</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- display -->
+				<id>17</id>
+				<type>display</type>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>18</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>0</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>9</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>19</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>1</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>9</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>20</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>2</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>9</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>21</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>9</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>13</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>22</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>9</id>
+						<pin>4</pin>
+					</in>
+					<out>
+						<id>10</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>23</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>3</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>10</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>24</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>4</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>10</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>25</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>10</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>14</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>26</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>10</id>
+						<pin>4</pin>
+					</in>
+					<out>
+						<id>11</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>27</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>5</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>11</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>28</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>6</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>11</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>29</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>11</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>15</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>30</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>11</id>
+						<pin>4</pin>
+					</in>
+					<out>
+						<id>12</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>31</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>7</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>12</id>
+						<pin>1</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>32</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>8</id>
+						<pin>0</pin>
+					</in>
+					<out>
+						<id>12</id>
+						<pin>2</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>33</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>12</id>
+						<pin>3</pin>
+					</in>
+					<out>
+						<id>16</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+			<component>
+				<!-- vezetek -->
+				<id>34</id>
+				<type>wire</type>
+				<connections>
+					<in>
+						<id>12</id>
+						<pin>4</pin>
+					</in>
+					<out>
+						<id>17</id>
+						<pin>0</pin>
+					</out>
+				</connections>
+			</component>
+		</parts>
+	</composite>
+<!-- ######################################################################################### -->
+<composite>
+    <!-- egy bites mpx -->
+    <cid>4</cid>
+    <parts>
+      <component>
+        <!-- kapcsolo -->
+        <id>0</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>1</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>2</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- csomopont -->
+        <id>3</id>
+        <type>node</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- inverter -->
+        <id>4</id>
+        <type>inverter</type>
+      </component>
+      <component>
+        <!-- es kapu -->
+        <id>5</id>
+        <type>andgate</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- es kapu -->
+        <id>6</id>
+        <type>andgate</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- vagy kapu -->
+        <id>7</id>
+        <type>orgate</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- display -->
+        <id>8</id>
+        <type>display</type>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>9</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>1</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>3</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>10</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>3</id>
+            <pin>1</pin>
+          </in>
+          <out>
+            <id>4</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>11</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>3</id>
+            <pin>2</pin>
+          </in>
+          <out>
+            <id>6</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>12</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>4</id>
+            <pin>1</pin>
+          </in>
+          <out>
+            <id>5</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>13</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>0</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>5</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>14</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>2</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>6</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>15</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>5</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>7</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>16</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>6</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>7</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>17</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>7</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>8</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+    </parts>
+  </composite>
+  <!-- ############################################  4bites mpx ################################################### -->
+  <composite>
+    <cid>5</cid>
+    <parts>
+      <component>
+        <!-- kapcsolo -->
+        <id>0</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>1</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>2</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>3</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>4</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>5</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>6</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>7</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+      <component>
+        <!-- kapcsolo -->
+        <id>8</id>
+        <type>switch</type>
+        <value>0</value>
+      </component>
+	  <component>
+        <!-- csomopont -->
+        <id>9</id>
+        <type>node</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- csomopont -->
+        <id>10</id>
+        <type>node</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- csomopont -->
+        <id>11</id>
+        <type>node</type>
+        <pincount>3</pincount>
+      </component>
+      <component>
+        <!-- composite -->
+        <id>12</id>
+        <type>composite</type>
+        <reference>4</reference>
+        <inpins>3</inpins>
+        <outpins>1</outpins>
+      </component>
+      <component>
+        <!-- composite -->
+        <id>13</id>
+        <type>composite</type>
+        <reference>4</reference>
+        <inpins>3</inpins>
+        <outpins>1</outpins>
+      </component>
+      <component>
+        <!-- composite -->
+        <id>14</id>
+        <type>composite</type>
+        <reference>4</reference>
+        <inpins>3</inpins>
+        <outpins>1</outpins>
+      </component>
+      <component>
+        <!-- composite -->
+        <id>15</id>
+        <type>composite</type>
+        <reference>4</reference>
+        <inpins>3</inpins>
+        <outpins>1</outpins>
+      </component>
+	  <component>
+        <!-- display -->
+        <id>16</id>
+        <type>display</type>
+      </component>
+      <component>
+        <!-- display -->
+        <id>17</id>
+        <type>display</type>
+      </component>
+      <component>
+        <!-- display -->
+        <id>18</id>
+        <type>display</type>
+      </component>
+      <component>
+        <!-- display -->
+        <id>19</id>
+        <type>display</type>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>20</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>1</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>12</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>21</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>2</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>13</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>22</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>3</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>14</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>23</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>4</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>15</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>24</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>5</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>12</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>25</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>6</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>13</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>26</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>7</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>14</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>27</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>8</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>15</id>
+            <pin>2</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>28</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>0</id>
+            <pin>0</pin>
+          </in>
+          <out>
+            <id>9</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>29</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>9</id>
+            <pin>1</pin>
+          </in>
+          <out>
+            <id>12</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>30</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>9</id>
+            <pin>2</pin>
+          </in>
+          <out>
+            <id>10</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>31</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>10</id>
+            <pin>1</pin>
+          </in>
+          <out>
+            <id>13</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>32</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>10</id>
+            <pin>2</pin>
+          </in>
+          <out>
+            <id>11</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>33</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>11</id>
+            <pin>1</pin>
+          </in>
+          <out>
+            <id>14</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>34</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>11</id>
+            <pin>2</pin>
+          </in>
+          <out>
+            <id>15</id>
+            <pin>1</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>35</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>12</id>
+            <pin>3</pin>
+          </in>
+          <out>
+            <id>16</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>36</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>13</id>
+            <pin>3</pin>
+          </in>
+          <out>
+            <id>17</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>37</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>14</id>
+            <pin>3</pin>
+          </in>
+          <out>
+            <id>18</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+      <component>
+        <!-- vezetek -->
+        <id>38</id>
+        <type>wire</type>
+        <connections>
+          <in>
+            <id>15</id>
+            <pin>3</pin>
+          </in>
+          <out>
+            <id>19</id>
+            <pin>0</pin>
+          </out>
+        </connections>
+      </component>
+    </parts>
+  </composite>
+  <!-- ############################################################################################## -->
+  <composite><!-- rs latch -->
+<cid>6</cid>
+<parts>
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- vagy kapu -->
+	<id>2</id>
+	<type>orgate</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- vagy kapu -->
+	<id>3</id>
+	<type>orgate</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- inverter -->
+	<id>4</id>
+	<type>inverter</type>
+</component>
+<component><!-- inverter -->
+	<id>5</id>
+	<type>inverter</type>
+</component>
+<component><!-- csomopont -->
+	<id>6</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- display -->
+	<id>7</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>9</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>3</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>10</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>11</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>4</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>12</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>3</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>13</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>3</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>14</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>15</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>7</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</parts>
+</composite>
+
+<!-- ###################################################################### -->
+<composite><!-- d latch -->
+<cid>7</cid>
+<parts>
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- csomopont -->
+	<id>2</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- inverter -->
+	<id>3</id>
+	<type>inverter</type>
+</component>
+<component><!-- es kapu -->
+	<id>4</id>
+	<type>andgate</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- es kapu -->
+	<id>5</id>
+	<type>andgate</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- composite -->
+	<id>6</id>
+	<type>composite</type>
+	<reference>6</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- display -->
+	<id>7</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>9</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>3</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>10</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>3</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>11</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>12</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>13</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>14</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>4</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>15</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>16</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>7</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</parts>
+</composite>
+<!-- #################################################################################################-->
+<composite><!-- d flip flop -->
+<cid>8</cid>
+<parts>
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- csomopont -->
+	<id>2</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- inverter -->
+	<id>3</id>
+	<type>inverter</type>
+</component>
+<component><!-- composite -->
+	<id>4</id>
+	<type>composite</type>
+	<reference>7</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- composite -->
+	<id>5</id>
+	<type>composite</type>
+	<reference>7</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- display -->
+	<id>6</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>7</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>3</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>9</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>10</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>3</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>11</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>12</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>4</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>13</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</parts>
+</composite> 
+<!-- ############################################################################################ -->
+
+<composite><!-- 4 bites d flip flop-->
+<cid>9</cid>
+<parts>
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>2</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>3</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>4</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- csomopont -->
+	<id>5</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>6</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>7</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- composite -->
+	<id>8</id>
+	<type>composite</type>
+	<reference>8</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- composite -->
+	<id>9</id>
+	<type>composite</type>
+	<reference>8</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- composite -->
+	<id>10</id>
+	<type>composite</type>
+	<reference>8</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- composite -->
+	<id>11</id>
+	<type>composite</type>
+	<reference>8</reference>
+	<inpins>2</inpins>
+	<outpins>1</outpins>
+</component>
+<component><!-- display -->
+	<id>12</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>13</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>14</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>15</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>16</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>17</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>8</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>18</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>19</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>9</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>20</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>7</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>21</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>7</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>10</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>22</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>7</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>23</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>8</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>24</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>9</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>25</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>3</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>10</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>26</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>4</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>27</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>8</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>28</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>9</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>29</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>10</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>30</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>11</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</parts>
+</composite>
+<composite>
+<cid>10</cid>
+<parts>
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>2</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>3</id>
+	<type>switch</type>
+	<value>1</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>4</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>5</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>6</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>7</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>8</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>9</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>10</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- composite -->
+	<id>11</id>
+	<type>composite</type>
+	<reference>3</reference>
+	<inpins>9</inpins>
+	<outpins>5</outpins>
+</component>
+<component><!-- composite -->
+	<id>12</id>
+	<type>composite</type>
+	<reference>5</reference>
+	<inpins>9</inpins>
+	<outpins>4</outpins>
+</component>
+<component><!-- composite -->
+	<id>13</id>
+	<type>composite</type>
+	<reference>9</reference>
+	<inpins>5</inpins>
+	<outpins>4</outpins>
+</component>
+<component><!-- composite -->
+	<id>14</id>
+	<type>composite</type>
+	<reference>5</reference>
+	<inpins>9</inpins>
+	<outpins>4</outpins>
+</component>
+<component><!-- composite -->
+	<id>15</id>
+	<type>composite</type>
+	<reference>9</reference>
+	<inpins>5</inpins>
+	<outpins>4</outpins>
+</component>
+<component><!-- csomopont -->
+	<id>16</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>17</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>18</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>19</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>20</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>21</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>22</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>23</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>24</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- csomopont -->
+	<id>25</id>
+	<type>node</type>
+	<pincount>3</pincount>
+</component>
+<component><!-- display -->
+	<id>26</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>27</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>28</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>29</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>30</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>3</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>5</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>31</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>4</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>6</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>32</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>5</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>7</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>33</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>6</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>8</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>34</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>7</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>5</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>35</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>8</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>6</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>36</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>9</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>7</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>37</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>10</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>8</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>38</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>17</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>39</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>17</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>40</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>17</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>41</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>11</id>
+			<pin>9</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>42</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>11</id>
+			<pin>10</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>43</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>11</id>
+			<pin>11</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>3</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>44</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>11</id>
+			<pin>12</pin>
+		</in>
+		<out>
+			<id>12</id>
+			<pin>4</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>45</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>12</id>
+			<pin>9</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>46</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>12</id>
+			<pin>10</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>47</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>12</id>
+			<pin>11</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>3</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>48</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>12</id>
+			<pin>12</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>4</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>49</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>13</id>
+			<pin>5</pin>
+		</in>
+		<out>
+			<id>18</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>50</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>13</id>
+			<pin>6</pin>
+		</in>
+		<out>
+			<id>19</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>51</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>13</id>
+			<pin>7</pin>
+		</in>
+		<out>
+			<id>20</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>52</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>13</id>
+			<pin>8</pin>
+		</in>
+		<out>
+			<id>21</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>53</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>18</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>54</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>19</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>3</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>55</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>20</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>5</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>56</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>21</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>7</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>57</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>18</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>58</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>19</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>59</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>20</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>3</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>60</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>21</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>14</id>
+			<pin>4</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>61</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>14</id>
+			<pin>9</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>62</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>14</id>
+			<pin>10</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>63</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>14</id>
+			<pin>11</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>3</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>64</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>14</id>
+			<pin>12</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>4</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>65</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>15</id>
+			<pin>5</pin>
+		</in>
+		<out>
+			<id>22</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>66</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>15</id>
+			<pin>6</pin>
+		</in>
+		<out>
+			<id>23</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>67</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>15</id>
+			<pin>7</pin>
+		</in>
+		<out>
+			<id>24</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>68</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>15</id>
+			<pin>8</pin>
+		</in>
+		<out>
+			<id>25</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>69</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>22</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>2</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>70</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>23</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>4</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>71</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>24</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>6</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>72</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>25</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>8</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>73</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>22</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>29</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>74</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>23</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>28</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>75</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>24</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>27</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>76</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>25</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>26</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>77</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>16</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>78</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>16</id>
+			<pin>1</pin>
+		</in>
+		<out>
+			<id>13</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>79</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>16</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>15</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>80</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>11</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</parts>
+</composite>
+<!-- ##################################################################################-->
+<!-- ##################################################################################-->
+<!-- ##################################################################################-->
+<!-- ##################################################################################-->
+<!-- ##################################################################################-->
+<component><!-- kapcsolo -->
+	<id>0</id>
+	<type>signalgenerator</type>
+	<value>01</value>
+</component>
+<component><!-- kapcsolo -->
+	<id>1</id>
+	<type>switch</type>
+	<value>0</value>
+</component>
+<component><!-- composite -->
+	<id>2</id>
+	<type>composite</type>
+	<reference>10</reference>
+	<inpins>2</inpins>
+	<outpins>4</outpins>
+</component>
+<component><!-- display -->
+	<id>3</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>4</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>5</id>
+	<type>display</type>
+</component>
+<component><!-- display -->
+	<id>6</id>
+	<type>display</type>
+</component>
+<component><!-- vezetek -->
+	<id>7</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>0</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>8</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>1</id>
+			<pin>0</pin>
+		</in>
+		<out>
+			<id>2</id>
+			<pin>1</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>9</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>2</pin>
+		</in>
+		<out>
+			<id>3</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>10</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>3</pin>
+		</in>
+		<out>
+			<id>4</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>11</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>4</pin>
+		</in>
+		<out>
+			<id>5</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+<component><!-- vezetek -->
+	<id>12</id>
+	<type>wire</type>
+	<connections>
+		<in>
+			<id>2</id>
+			<pin>5</pin>
+		</in>
+		<out>
+			<id>6</id>
+			<pin>0</pin>
+		</out>
+	</connections>
+</component>
+</circuit>
